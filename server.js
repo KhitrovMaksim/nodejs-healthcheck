@@ -3,7 +3,6 @@ const axios = require('axios');
 const https = require('https');
 
 const { PORT } = process.env;
-const HOST = 'localhost';
 
 const server = express();
 
@@ -37,4 +36,4 @@ server.get('/healthz', (req, res) => {
     .end();
 });
 
-server.listen(PORT, HOST);
+server.listen(PORT);
