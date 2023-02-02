@@ -12,7 +12,8 @@
 4. Add Dockerfile to your project.
 
 #### How to build
+```shell
 docker build --network=host -t healthcheck:1.0 .
 docker run -d -p 3000:3000 -e PORT=3000 --rm healthcheck:1.0
 docker stop $(docker ps -a -q --filter ancestor=healthcheck:1.0 --format="{{.ID}}")
-
+```
