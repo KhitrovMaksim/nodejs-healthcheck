@@ -26,8 +26,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\"",
-    "format": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\"",
+    "lint": "eslint . && prettier -c \"**/*.js\"",
+    "format": "eslint . --fix && prettier --write \"**/*.js\"",
     "prepare": "husky install"
   },
   "devDependencies": {
