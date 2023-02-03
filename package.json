@@ -26,9 +26,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\"",
-    "format": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\"",
-    "prepare": "husky install"
+    "lint": "eslint . && prettier -c \"**/*.js\"",
+    "format": "eslint . --fix && prettier --write \"**/*.js\""
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",

@@ -11,3 +11,9 @@
 3. Add to the service /healthz endpoint. Add ping healtchcheck what uses HEAD http method for checking connectivity with yesno.wtf domain. It should be  returned 200, if service can access the yesno.wtf domain and return 500, if service can not.
 4. Add Dockerfile to your project.
 
+#### How to build
+```shell
+docker build --network=host -t healthcheck:1.0 .
+docker run -d -p 3000:3000 -e PORT=3000 --rm healthcheck:1.0
+docker stop $(docker ps -a -q --filter ancestor=healthcheck:1.0 --format="{{.ID}}")
+```
