@@ -59,25 +59,3 @@ aws ecs delete-service --cluster nodejs-cluster --service nodejs-cluster-service
 aws ecs delete-cluster --cluster test-fargate
 aws ecr delete-repository --repository-name nodejs-healthcheck --force
 ```
-
-
-
-
-
-
-
-
-
-
-
-aws iam add-role-to-instance-profile --instance-profile-name ecsInstanceRole-profile --role-name ecsInstanceRole
-aws iam add-role-to-instance-profile \
---instance-profile-name ecsInstanceRole-profile \
---role-name ecsInstanceRole
-
-aws ecr describe-repositories
-aws ecr list-images --repository-name nodejs-healthcheck
-aws ecs list-task-definitions
-
-
-"executionRoleArn": "arn:aws:iam::698445805226:role/ecsTaskExecutionRole"
