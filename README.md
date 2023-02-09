@@ -56,6 +56,6 @@ aws ecs create-service --cluster nodejs-cluster --service-name nodejs-cluster-se
 4. Delete service, cluster and repository
 ```shell
 aws ecs delete-service --cluster nodejs-cluster --service nodejs-cluster-service --force
-aws ecs delete-cluster --cluster test-fargate
+aws ecs delete-cluster --cluster nodejs-cluster
 aws ecr delete-repository --repository-name nodejs-healthcheck --force
 ```
