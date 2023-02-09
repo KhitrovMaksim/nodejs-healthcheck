@@ -6,6 +6,10 @@ const { PORT } = process.env;
 
 const server = express();
 
+server.get('/', (req, res) => {
+  res.send('<a href="/random">Random</a> ' + '<a href="/healthz">Healthz</a>');
+});
+
 server.get('/random', (req, res) => {
   axios
     .get('https://yesno.wtf/api?output=prettyjson')
@@ -22,7 +26,6 @@ server.get('/random', (req, res) => {
 });
 
 server.get('/healthz', (req, res) => {
-  // https://httpstat.us/500
   https
     .request('https://yesno.wtf', { method: 'HEAD' }, (httpsResponse) => {
       const { statusCode } = httpsResponse;
