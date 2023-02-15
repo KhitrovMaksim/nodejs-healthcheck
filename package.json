@@ -1,7 +1,7 @@
 {
   "name": "nodejs-healtcheck",
   "version": "1.0.0",
-  "author": "Maksim Khitrov <khitrov.maks@gmail.com>",
+  "author": "Makism Khitrov <khitrov.maks@gmail.com>",
   "description": "2.5 Healthcheck",
   "license": "MIT",
   "keywords": [
@@ -26,8 +26,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\"",
-    "format": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\""
+    "lint": "eslint . && prettier -c \"**/*.js\"",
+    "format": "prettier --write \"**/*.js\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
