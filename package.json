@@ -1,7 +1,7 @@
 {
   "name": "nodejs-healtcheck",
   "version": "1.0.0",
-  "author": "Makism Khitrov <khitrov.maks@gmail.com>",
+  "author": "Maksim Khitrov <khitrov.maks@gmail.com>",
   "description": "2.5 Healthcheck",
   "license": "MIT",
   "keywords": [
