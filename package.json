@@ -27,8 +27,7 @@
   "scripts": {
     "start": "node server.js",
     "lint": "eslint . && prettier -c \"**/*.js\"",
-    "format": "prettier --write \"**/*.js\"",
-    "prepare": "husky install"
+    "format": "prettier --write \"**/*.js\""
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
@@ -40,7 +39,7 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.3",
+    "husky": "^4.3.8",
     "lint-staged": "^13.1.0",
     "prettier": "2.8.3"
   },
